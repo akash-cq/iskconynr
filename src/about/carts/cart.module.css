@@ -1,0 +1,22 @@
+.container{
+    display: flex;
+    border: 1px solid black;
+    height: 200px;
+    padding-bottom: 2rem;
+    width: 300px;
+    margin: 10px;
+    flex-direction: column;
+    border-radius:10px;
+}
+.upper{
+    height: 30px;
+    width: 100%;
+    background-color: red;
+    border-radius: 10px;
+    text-align: center;
+}
+.lower{
+    text-align: center;
+    margin-top: 5%;
+    font-weight: bold;
+}

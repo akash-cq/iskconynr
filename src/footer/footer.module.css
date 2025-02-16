@@ -1,0 +1,125 @@
+.footer {
+    background: linear-gradient(135deg, #7a0000, #4b0101);
+    /* Pure Royal Red */
+    color: #EDE7DD;
+    /* Soft Off-White */
+    padding: 60px 20px;
+    font-family: "Poppins", sans-serif;
+    border-top: 4px solid #B58E6F;
+    /* Light Copper Border */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: auto;
+    gap: 40px;
+    text-align: left;
+}
+
+.section {
+    flex: 1;
+    min-width: 260px;
+}
+
+.logo {
+    width: 140px;
+    margin-bottom: 15px;
+}
+
+.section p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #D8C3A5;
+    /* Warm Beige */
+    border-bottom: 2px solid #B58E6F;
+    /* Light Copper */
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.links {
+    list-style: none;
+    padding: 0;
+}
+
+.links li {
+    margin: 10px 0;
+}
+
+.links a {
+    color: #EDE7DD;
+    /* Soft Off-White */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.links a:hover {
+    color: #D8C3A5;
+    /* Warm Beige on Hover */
+}
+
+.socialIcons a {
+    font-size: 22px;
+    margin: 0 10px;
+    color: #D8C3A5;
+    transition: transform 0.3s ease;
+}
+
+.socialIcons a:hover {
+    transform: scale(1.1);
+}
+
+.newsletter input {
+    width: 80%;
+    padding: 10px;
+    border: 2px solid #D8C3A5;
+    border-radius: 5px;
+    margin-top: 10px;
+    outline: none;
+    background: transparent;
+    color: #EDE7DD;
+}
+
+.newsletter button {
+    background: #B58E6F;
+    color: #4b0101;
+    padding: 10px 15px;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.newsletter button:hover {
+    background: #a1785e;
+}
+
+.bottom {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 10px;
+}
+
+/* ✅ Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .newsletter input {
+        width: 100%;
+    }
+}

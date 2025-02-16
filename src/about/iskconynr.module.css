@@ -1,0 +1,54 @@
+.container {
+    margin-top: 5rem;
+    height: max-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.names {
+    height: 100px;
+    width: 100%;
+    padding: 2%;
+}
+
+.h1 {
+    color: blueviolet;
+    margin-left: 5%;
+}
+
+.p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 5%;
+}
+
+.image {
+    height: 600px;
+    width: 100%;
+    border: 1px solid black;
+    background-color: grey;
+}
+
+.paraYnr {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    text-align: center;
+}
+.heading{
+    color: blueviolet;
+    font-weight: bolder;
+    font-size: 2rem;
+    margin: 1rem;
+}
+.journey{
+    text-align: center;
+    margin: 2%;
+}
+.carts{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
