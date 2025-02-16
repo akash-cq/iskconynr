@@ -1,22 +1,33 @@
-.container{
+.container {
     display: flex;
-    border: 1px solid black;
-    height: 200px;
-    padding-bottom: 2rem;
-    width: 300px;
-    margin: 10px;
     flex-direction: column;
-    border-radius:10px;
-}
-.upper{
-    height: 30px;
+    align-items: center;
+    padding: 20px;
     width: 100%;
-    background-color: red;
-    border-radius: 10px;
+    max-width: 320px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px;
     text-align: center;
+    word-wrap: break-word;
 }
-.lower{
-    text-align: center;
-    margin-top: 5%;
-    font-weight: bold;
+
+.upper {
+    width: 100%;
+    /* Updated gradient using orangered (#FF4500) and tomato (#FF6347) for a devotion vibe */
+    background: linear-gradient(135deg, #FF4500, #FF6347);
+    border-radius: 8px;
+    color: #fff;
+    padding: 10px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.lower {
+    width: 100%;
+    color: #333;
+    font-size: 1.1rem;
+    font-weight: 500;
 }

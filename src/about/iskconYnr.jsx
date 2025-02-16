@@ -1,6 +1,7 @@
 import React from "react";
 import style from "./iskconynr.module.css";
 import Cart from "./carts/cart";
+import Carting from "../carts/cart";
 
 export default function IskconYnr() {
     const arr = [
@@ -53,7 +54,7 @@ export default function IskconYnr() {
           </p>
           <div className={style.carts}>
             {arr.map((val, indx) => {
-              return <Cart key={indx} text={para[indx]} length={val} />;
+              return <Carting key={indx} content={para[indx]} heading={val} />;
             })}
           </div>
         </section>

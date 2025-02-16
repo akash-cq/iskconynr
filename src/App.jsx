@@ -7,6 +7,7 @@ import ISKCONPage from './about/iskcon'
 import Footer from './footer/footer'
 import Prabhupad from './about/prabhupad'
 import IskconYnr from './about/iskconYnr'
+import Home from './home/home'
 function App() {
 
   return (
@@ -14,7 +15,7 @@ function App() {
       <Router>
         <Navbar></Navbar>
         <Routes>
-          <Route path="/" element={<h1>welcome to ynr</h1>}></Route>
+          <Route path="/" element={<Home/>}></Route>
           <Route path="/about-Iskcon" element={<ISKCONPage />}></Route>
           <Route path="/founder-acharya" element={<Prabhupad />}></Route>
           <Route path="/iskcon-ynr" element={<IskconYnr />}></Route>

@@ -1,0 +1,59 @@
+.container {
+    height: 2000px;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.image {
+    height: 500px;
+    width: 1920px;
+    background-color: grey;
+}
+
+.about {
+    border: 1px solid black;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: blueviolet;
+}
+
+.insideabout {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.imageAbout {
+    height: 300px;
+    width: 300px;
+    border: 1px solid black;
+}
+
+.cartsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.activity {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.svgcontainer {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

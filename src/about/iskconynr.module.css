@@ -47,8 +47,9 @@
     margin: 2%;
 }
 .carts{
+    padding: 2rem;
+    height: max-content;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
