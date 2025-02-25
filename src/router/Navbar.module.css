@@ -1,5 +1,4 @@
 .container {
-    position: fixed;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -7,7 +6,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    max-width: 99%;
+    max-width: 100%;
     margin: 0 auto;
     background-color: rgba(245, 245, 245, 0.9);
     backdrop-filter: blur(10px);
@@ -88,25 +87,83 @@ span:hover {
     background-color: #ff6600;
     color: white;
 }
-.toggle{
-    display: none;
+
+.toggle {
+    border: 1px solid black;
+    background-color: whitesmoke;
+    border: hidden;
+
 }
 
-/* ✅ Mobile Navigation Fix */
-@media screen and (max-width: 992px) {
-    .container {
-        flex-direction: row;
-        padding: 10px 15px;
-    }
+.svg {
+    display: none !important;
+}
 
-    .rightNav {
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-        display: none;
-        /* Hide by default in mobile */
-    }
+.dropdown {
+    position: relative;
+}
 
+.dropdownMenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    /* Places it directly below */
+    left: 50%;
+    transform: translateX(-50%);
+    /* Centers it */
+    background: white;
+    min-width: 160px;
+    /* Ensures enough width */
+    max-width: 250px;
+    /* Prevents excessive width */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    z-index: 1000;
+    white-space: nowrap;
+    /* Prevents text from wrapping */
+}
+
+.dropdown:hover .dropdownMenu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Prevent right-side overflow */
+@media screen and (min-width: 768px) {}
+
+.dropdownMenu li {
+    padding: 10px 15px;
+    transition: background 0.3s ease-in-out;
+}
+
+.dropdownMenu li:hover {
+    background-color: #ff6600;
+    color: white;
+}
+
+/* Ensuring other menu items don’t shift */
+.rightNav {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    list-style: none;
+    flex-wrap: nowrap;
+    /* Prevents items from moving to the next line */
+}
+
+.cont {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+}
+
+/* ✅ Even Smaller Screens */
+@media screen and (max-width: 768px) {
     .toggle {
         display: block;
         cursor: pointer;
@@ -115,23 +172,44 @@ span:hover {
         background: none;
         border: none;
         outline: none;
+        margin-right: 0;
+        width: max-content;
+
+
     }
 
-    .rightNav.active {
-        display: flex;
+    .svg {
+        display: block !important;
     }
-}
 
-/* ✅ Even Smaller Screens */
-@media screen and (max-width: 768px) {
     .container {
         flex-direction: row;
         padding: 10px;
+        align-items: flex-start;
     }
 
     .rightNav {
         flex-direction: column;
         align-items: center;
         gap: 0.8rem;
+        display: none;
     }
+
+    .cont {
+        flex-direction: column-reverse;
+        margin-right: 1rem;
+        align-items: end;
+    }
+
+    .hide {
+        display: flex;
+    }
+
+    .dropdownMenu {
+        left: auto;
+        right: 0;
+        /* Ensures it aligns properly if near the right edge */
+        transform: none;
+    }
+
 }

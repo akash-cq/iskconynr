@@ -1,0 +1,87 @@
+.donationContainer {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    text-align: center;
+}
+
+.heading {
+    font-size: 2rem;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.mahamantra {
+    font-size: 1.2rem;
+    color: #0056b3;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.extraText,
+.note,
+.reminder {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.qrCode {
+    width: 200px;
+    height: 200px;
+    background-color: #f0f0f0;
+    margin: 20px auto;
+    border: 2px dashed #ccc;
+}
+
+.form input,
+.form select,
+.form textarea {
+    margin-left: 40%;
+    display: block;
+    width: 20%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: black;
+    background-color: whitesmoke;
+}
+
+.form button {
+    margin-left: 2%;
+    width: 20%;
+    background-color: #0056b3;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form button:hover {
+    background-color: #003366;
+}
+
+.reminder {
+    font-style: italic;
+    color: #777;
+}
+
+@media (max-width: 600px) {
+    .donationContainer {
+        padding: 15px;
+    }
+
+    .heading {
+        font-size: 1.5rem;
+    }
+
+    .mahamantra {
+        font-size: 1rem;
+    }
+}
