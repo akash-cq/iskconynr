@@ -2,11 +2,14 @@ import React from 'react'
 import style from "./home.module.css"
 import Carting from '../carts/cart'
 import SvgCart from '../svgCart/svgCart';
+import Image from "../../public/temple.png"
 export default function Home() {
   return (
     <>
       <div className={style.container}>
-        <div className={style.image}>500*1920</div>
+        <div className={style.image}>
+          <img src={Image} alt="temple" className={style.img} />
+        </div>
         <div className={style.about}>
           <h2 className={style.h2}>About Our Temple</h2>
           <div className={style.insideabout}>

@@ -51,12 +51,12 @@ export default function Navbar() {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/forum-children" className={style.link}>
+                  <Link to="/forum-childsIyf" className={style.link}>
                     Children
                   </Link>
                 </li>
                 <li>
-                  <Link to="/forum-girls" className={style.link}>
+                  <Link to="/forum-GirlsIyf" className={style.link}>
                     Girl Forum
                   </Link>
                 </li>

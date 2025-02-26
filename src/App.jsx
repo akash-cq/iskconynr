@@ -8,8 +8,11 @@ import Footer from './footer/footer'
 import Prabhupad from './about/prabhupad'
 import IskconYnr from './about/iskconYnr'
 import Home from './home/home'
-import IyfPage from './forum/iyfPage'
+import IyfPage from './forum/iyf/iyfPage'
 import DonationForm from './donation/donation'
+import ChaildPage from './forum/childs/child'
+import GirlIyfPage from './forum/girliyf/girlIfy'
+import GirlIgfPage from './forum/girliyf/girlIfy'
 function App() {
 
   return (
@@ -23,6 +26,8 @@ function App() {
           <Route path="/iskcon-ynr" element={<IskconYnr />}></Route>
           <Route path="/about-Iskcon" element={<IskconYnr />}></Route>
           <Route path="/forum-iyf" element={<IyfPage />}></Route>
+          <Route path="/forum-childsIyf" element={<ChaildPage />}></Route>
+          <Route path="/forum-GirlsIyf" element={<GirlIgfPage />}></Route>
           <Route path="/donation" element={<DonationForm />}></Route>
         </Routes>
         <Footer></Footer>
