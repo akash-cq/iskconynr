@@ -1,5 +1,6 @@
 import React from 'react'
 import style from "./Prabhu.module.css"
+import prabhupad from "../assets/prabhupad.png"
 export default function Prabhupad() {
   return (
     <>
@@ -10,7 +11,9 @@ export default function Prabhupad() {
           <p className={style.p}>A.C. Bhaktivedanta Swami Prabhupada</p>
         </section>
         <section className={style.Bio}>
-          <div className={style.image}>700*400</div>
+          <div className={style.image}>
+            <img src={prabhupad} alt="" />
+          </div>
           <div className={style.paragraph}>
             <p>
               His Divine Grace A. C. Bhaktivedanta Swami Prabhupada,

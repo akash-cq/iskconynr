@@ -2,7 +2,7 @@ import React from "react";
 import style from "./iskconynr.module.css";
 import Cart from "./carts/cart";
 import Carting from "../carts/cart";
-
+import iskconYNR from "../assets/templeYNR.png"
 export default function IskconYnr() {
     const arr = [
       "Spiritual Enlightenment: ",
@@ -22,7 +22,9 @@ export default function IskconYnr() {
           <p className={style.p}>ISKCON YAMUNANAGAR</p>
         </section>
         <section>
-          <div className={style.image}>100% *600</div>
+          <div className={style.image}>
+            <img src={iskconYNR} alt="" />
+          </div>
         </section>
         <section className={style.paraYnr}>
           <p>

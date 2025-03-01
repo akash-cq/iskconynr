@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./style.module.css";
 import ImageCard from "./galerycard/GalleryCard";
-import srck from "../../public/temple.png"
+import srck from "../assets/aboutPic.png"
 
 const Gallery = () => {
   const imageData = [

@@ -1,6 +1,9 @@
 import React from 'react'
 import style from "./iskcon.module.css"
 import Cart from './carts/cart';
+import IskconPrabhupad from "../assets/iskconPrabhupad.png"
+import IskconWord from "../assets/iskconWord.png"
+import IskconLogo from "../assets/iskconLogo.png";
 export default function ISKCONPage() {
   const arr = [
     "To systematically propagate spiritual knowledge to society at large and to educate all people in the techniques of spiritual life in order to check the imbalance of values in life and to achieve real unity and peace in the world.",
@@ -16,7 +19,7 @@ export default function ISKCONPage() {
       <div className={style.container}>
         <section className={style.prabhu}>
           <div className={style.image}>
-            <h2>300*300</h2>
+            <img src={IskconPrabhupad} alt="" />
           </div>
           <div className={style.paragraph}>
             <p>
@@ -30,7 +33,9 @@ export default function ISKCONPage() {
             </p>
           </div>
         </section>
-        <section className={style.name}>1520*200</section>
+        <section className={style.name}>
+          <img src={IskconWord} alt="" />
+        </section>
         <section className={style.cartsContainer}>
           {arr.map((indx, index) => {
             return <Cart key={index} text={indx} length={index + 1}></Cart>;
@@ -38,7 +43,7 @@ export default function ISKCONPage() {
         </section>
         <section className={style.lastPart}>
           <div className={style.image}>
-            <h2>300*300</h2>
+            <img src={IskconLogo} alt="" />
           </div>
           <div className={style.paraLast}>
             <p>
