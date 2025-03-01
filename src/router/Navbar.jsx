@@ -73,23 +73,23 @@ export default function Navbar() {
               <span className={style.link}>Donation ▾</span>
               <ul className={style.dropdownMenu}>
                 <li>
-                  <Link to="/donation-food" className={style.link}>
+                  <Link to="/donation-fooddonation" className={style.link}>
                     Food Donation
                   </Link>
                 </li>
                 <li>
-                  <Link to="/donation-education" className={style.link}>
-                    Education Donation
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/donation-temple" className={style.link}>
+                  <Link to="/donation-templedonation" className={style.link}>
                     Temple Donation
                   </Link>
                 </li>
                 <li>
-                  <Link to="/donation-healthcare" className={style.link}>
-                    Healthcare Donation
+                  <Link to="/donation-festivaldonation" className={style.link}>
+                    Festival Donation
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/donation-otherdonation" className={style.link}>
+                    Other Donation
                   </Link>
                 </li>
               </ul>

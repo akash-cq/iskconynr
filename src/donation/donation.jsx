@@ -3,6 +3,7 @@ import styles from "./donation.module.css";
 
 const DonationForm = ({ type, extraText }) => {
   const [formData, setFormData] = useState({
+    nameOfDonation:{type},
     name: "",
     email: "",
     phone: "",

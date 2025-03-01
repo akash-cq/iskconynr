@@ -84,4 +84,16 @@
     .mahamantra {
         font-size: 1rem;
     }
+
+    .form input,
+    .form select {
+        width: 15rem;
+        margin-left: 20%;
+    }
+
+    .form textarea {
+        height: 15rem;
+        width: 20rem;
+        margin-left: 5%;
+    }
 }

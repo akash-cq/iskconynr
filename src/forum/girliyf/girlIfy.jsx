@@ -8,7 +8,7 @@ const GirlIgfPage = () => {
       <section className={styles.introSection}>
         <h1 className={styles.heading}>ISKCON GIRLS FORUM</h1>
         <p className={styles.description}>
-          ISKCON Girls Forum, Punjabi Bagh is a platform that helps girls revive
+          ISKCON Girls Forum, Yamunagar is a platform that helps girls revive
           their spiritual consciousness and engage their intelligence and
           capabilities in the services of the Supreme Lord. IGF comprises of
           over 100 girls (age group 18-30) coming from diverse backgrounds.

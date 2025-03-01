@@ -13,6 +13,12 @@ import DonationForm from './donation/donation'
 import ChaildPage from './forum/childs/child'
 import GirlIyfPage from './forum/girliyf/girlIfy'
 import GirlIgfPage from './forum/girliyf/girlIfy'
+import FoodDonation from './donation/foodDonation/foodDonation'
+import TempleDonation from './donation/templeDonation/templedonation'
+import FestivalDation from './donation/fetsivalDonation/fetivalDation'
+import OtherDonation from './donation/otherDonation/otherDonation'
+import ImageCard from './gallery'
+import Gallery from './gallery'
 function App() {
 
   return (
@@ -28,7 +34,23 @@ function App() {
           <Route path="/forum-iyf" element={<IyfPage />}></Route>
           <Route path="/forum-childsIyf" element={<ChaildPage />}></Route>
           <Route path="/forum-GirlsIyf" element={<GirlIgfPage />}></Route>
-          <Route path="/donation" element={<DonationForm />}></Route>
+          <Route
+            path="/donation-fooddonation"
+            element={<FoodDonation />}
+          ></Route>
+          <Route
+            path="/donation-templedonation"
+            element={<TempleDonation />}
+          ></Route>
+          <Route
+            path="/donation-festivalDonation"
+            element={<FestivalDation />}
+          ></Route>
+          <Route
+            path="/donation-otherdonation"
+            element={<OtherDonation />}
+          ></Route>
+          <Route path="/gallery" element={<Gallery />}></Route>
         </Routes>
         <Footer></Footer>
       </Router>
