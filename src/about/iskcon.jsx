@@ -2,7 +2,7 @@ import React from 'react'
 import style from "./iskcon.module.css"
 import Cart from './carts/cart';
 import IskconPrabhupad from "../assets/iskconPrabhupad.png"
-import IskconWord from "../assets/iskconWord.png"
+import IskconWord from "../assets/IskconWord.png"
 import IskconLogo from "../assets/iskconLogo.png";
 export default function ISKCONPage() {
   const arr = [
