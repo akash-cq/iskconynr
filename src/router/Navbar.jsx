@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import style from "./Navbar.module.css";
 import { useState } from "react";
+import logo from "../assets/logo.png"
 export default function Navbar() {
   const [menu, setMenu] = useState(false);
   console.log(menu);
@@ -9,7 +10,7 @@ export default function Navbar() {
     <>
       <nav className={style.container}>
         <div className={style.image}>
-          <img alt="image" className={style.logo} />
+          <img src={logo} className={style.logo} />
         </div>
         <div className={style.cont}>
           <ul
